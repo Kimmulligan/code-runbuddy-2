@@ -161,7 +161,9 @@ section {
 }
 .step-info {
     flex: 2 70%;
-    display: 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .step {
     margin: 50px auto;
@@ -173,14 +175,30 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-.step.text p {
+.step-text {
+    flex: 12;
+}
+.step-text p {
     color: #39a6b2;
     font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
 }
-.step.text h4 {
+.step-text h4 {
     font-size: 26px;
     line-height: 1.5px;
     color: #024e76;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.step-img img {
+    max-width: 100%;
 }
 .trainer {
     width: 900px;
